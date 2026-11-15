@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 64">
+  <path d="m37 5-7 6 7 6m17-12 7 6-7 6" fill="none" stroke="#06B6D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <text x="4" y="57" fill="#0F172A" font-family="Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-4">YR<tspan fill="#06B6D4">A</tspan></text>
+  <path d="M79 44h8" fill="none" stroke="#06B6D4" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="91" cy="44" r="3" fill="#0F172A"/>
+</svg>
