@@ -88,12 +88,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .btn {
   display: inline-block; padding: 13px 24px; border-radius: 999px;
   max-width: 100%; overflow-wrap: anywhere;
-  font-weight: 500; font-size: 0.95rem; transition: transform .15s, background .15s;
+  font-weight: 500; font-size: 0.95rem; font-family: inherit; line-height: inherit;
+  transition: transform .15s, background .15s;
 }
-.btn:hover { transform: translateY(-1px); }
+.btn:hover:not(:disabled) { transform: translateY(-1px); }
+.btn:disabled { cursor: not-allowed; }
 .btn-primary { background: var(--accent); color: var(--ink); }
 .btn-primary:hover { background: #22D3EE; }
-.btn-ghost { border: 1px solid var(--ink); }
+.btn-ghost { border: 1px solid var(--ink); background: transparent; }
+.btn-ghost:disabled { border-color: var(--line); color: var(--muted); }
 
 /* Sections */
 .section { padding: clamp(56px, 8vw, 100px) var(--gutter); border-top: 1px solid var(--line); }
