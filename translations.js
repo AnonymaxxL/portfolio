@@ -42,14 +42,16 @@ const translations = {
     about_title: "À propos",
     about_text: "Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'intelligence artificielle.",
     contact_title: "Travaillons ensemble",
-    contact_text: "Un stage, une alternance ou un projet ? Écris-moi.",
+    contact_text: "Pour un stage, une alternance ou un projet, vous pouvez me contacter.",
+    contact_phone_label: "Téléphone",
+    contact_location_label: "Ville",
     form_name: "Nom",
     form_subject: "Objet",
     form_email: "Adresse e-mail",
     form_message: "Message",
     form_submit: "Envoyer le message",
     form_required: "Tous les champs sont obligatoires.",
-    form_privacy: "Les informations saisies sont transmises à Formspree pour que je puisse recevoir ton message. N’envoie pas d’informations sensibles."
+    form_privacy: "Les informations que vous communiquez sont transmises à Formspree afin que je puisse recevoir votre message. Veuillez ne pas inclure d’informations sensibles."
   },
   en: {
     document_title: "Yao Roland AGBOLAN | Portfolio",
@@ -94,6 +96,8 @@ const translations = {
     about_text: "Admitted to the Data Science degree (BUT) at IUT Nice Côte d'Azur, I am self-studying programming, cybersecurity, Big Data, and artificial intelligence.",
     contact_title: "Let's work together",
     contact_text: "An internship, a work-study position, or a project? Get in touch.",
+    contact_phone_label: "Phone",
+    contact_location_label: "Location",
     form_name: "Name",
     form_subject: "Subject",
     form_email: "Email address",
@@ -144,14 +148,16 @@ const translations = {
     about_title: "Sobre mí",
     about_text: "Admitido en el BUT de Ciencia de Datos del IUT Nice Côte d'Azur, estudio por mi cuenta programación, ciberseguridad, Big Data e inteligencia artificial.",
     contact_title: "Trabajemos juntos",
-    contact_text: "¿Prácticas, formación en alternancia o un proyecto? Escríbeme.",
+    contact_text: "¿Prácticas, formación en alternancia o un proyecto? Puede ponerse en contacto conmigo.",
+    contact_phone_label: "Teléfono",
+    contact_location_label: "Ubicación",
     form_name: "Nombre",
     form_subject: "Asunto",
     form_email: "Correo electrónico",
     form_message: "Mensaje",
     form_submit: "Enviar mensaje",
     form_required: "Todos los campos son obligatorios.",
-    form_privacy: "La información que facilites se envía a Formspree para que pueda recibir tu mensaje. No incluyas información sensible."
+    form_privacy: "La información que facilite se enviará a Formspree para que pueda recibir su mensaje. No incluya información sensible."
   },
   zh: {
     document_title: "Yao Roland AGBOLAN | 个人作品集",
@@ -196,12 +202,14 @@ const translations = {
     about_text: "我已被尼斯蔚蓝海岸大学技术学院（IUT Nice Côte d'Azur）的数据科学本科（BUT）录取，并自学编程、网络安全、大数据和人工智能。",
     contact_title: "一起合作吧",
     contact_text: "实习、工学交替或项目合作？欢迎联系我。",
+    contact_phone_label: "电话",
+    contact_location_label: "所在地",
     form_name: "姓名",
     form_subject: "主题",
     form_email: "电子邮箱",
     form_message: "留言",
     form_submit: "发送留言",
     form_required: "所有字段均为必填项。",
-    form_privacy: "你填写的信息会发送至 Formspree，以便我收到你的留言。请勿填写敏感信息。"
+    form_privacy: "您提供的信息将发送至 Formspree，以便我收到您的留言。请勿填写敏感信息。"
   }
 };

@@ -51,6 +51,64 @@ function detectLanguage() {
 
 buttons.forEach((b) => b.addEventListener("click", () => setLanguage(b.dataset.lang)));
 
+const navLinks = document.querySelectorAll(".nav a");
+const navTargets = Array.from(navLinks, (link) => document.querySelector(link.hash));
+
+function setActiveNavigation(sectionId) {
+  navLinks.forEach((link) => {
+    if (link.hash === `#${sectionId}`) {
+      link.setAttribute("aria-current", "location");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => setActiveNavigation(link.hash.slice(1)));
+});
+
+if (window.IntersectionObserver) {
+  const activeSections = new Set();
+  const navigationObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) activeSections.add(entry.target);
+      else activeSections.delete(entry.target);
+    });
+
+    const activeSection = Array.from(activeSections)
+      .sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top)[0];
+    if (activeSection) setActiveNavigation(activeSection.id);
+  }, { rootMargin: "-20% 0px -70% 0px" });
+
+  navTargets.forEach((target) => {
+    if (target) navigationObserver.observe(target);
+  });
+}
+
+const revealTargets = document.querySelectorAll(
+  ".hero > *, .section > h2, .section > p, .section > .grid > *, .section > .skills-grid > *, .contact-actions"
+);
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (window.IntersectionObserver && !reduceMotion) {
+  revealTargets.forEach((target, index) => {
+    target.classList.add("reveal-on-scroll");
+    target.style.setProperty("--reveal-delay", `${Math.min(index % 5, 3) * 70}ms`);
+  });
+  document.body.classList.add("reveal-enabled");
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  revealTargets.forEach((target) => revealObserver.observe(target));
+}
+
 const contactForm = document.querySelector(".contact-form");
 contactForm.addEventListener("submit", () => {
   const subject = contactForm.querySelector('[name="subject"]').value.trim();

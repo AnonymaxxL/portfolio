@@ -35,9 +35,9 @@
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale" data-i18n-aria-label="nav_label">
-      <a href="#projects" data-i18n="nav_projects">Projets</a>
-      <a href="#skills" data-i18n="nav_skills">Compétences</a>
       <a href="#about" data-i18n="nav_about">À propos</a>
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#projects" data-i18n="nav_projects">Projets</a>
       <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
     <div class="lang" role="group" aria-label="Choisir la langue" data-i18n-aria-label="language_label">
@@ -61,39 +61,9 @@
       </div>
     </section>
 
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <h2 id="projects-title" data-i18n="projects_title">Projets</h2>
-      <div class="grid">
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p1_title">Joxial</h3>
-          <p data-i18n="p1_text">Joxial est une application web qui combine les meilleures fonctionnalités des applications du moment comme Whatsapp, Facebook, Snapchat et les sites de Gaming.</p>
-          <p class="tags" data-i18n="p1_skills">Compétences utilisées : HTML, CSS, JavaScript, Science des données, analyse</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p2_title">Tubissh</h3>
-          <p data-i18n="p2_text">Un site web qui permet de partager des vidéos et des contenus multimédias moyennement lourds à distance.</p>
-          <p class="tags" data-i18n="p2_skills">Compétences utilisées : Python, HTML, CSS, JavaScript</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_upcoming">À venir</span>
-          <h3 data-i18n="p3_title">Projet X</h3>
-          <p data-i18n="p3_text"> Un site web pour un particulier voulant créer une entreprise de lavage générale</p>
-          <p class="tags" data-i18n="p3_skills">Compétences utilisées : HTML, CSS, JavaScript, Python</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p4_title"> ACCA</h3>
-          <p data-i18n="p4_text"> Un site web de remplissage de formulaires de l'ACCA (Association Congolaise de la Côte d'Azur)</p>
-          <p class="tags" data-i18n="p4_skills">Compétences utilisées : HTML, CSS, JavaScript</p>
-        </article>
-
-      </div>
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="about_title">À propos</h2>
+      <p data-i18n="about_text">Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'IA.</p>
     </section>
 
     <section id="skills" class="section skills" aria-labelledby="skills-title">
@@ -132,9 +102,39 @@
       </div>
     </section>
 
-    <section id="about" class="section about" aria-labelledby="about-title">
-      <h2 id="about-title" data-i18n="about_title">À propos</h2>
-      <p data-i18n="about_text">Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'IA.</p>
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title" data-i18n="projects_title">Projets</h2>
+      <div class="grid">
+
+        <article class="card">
+          <span class="badge" data-i18n="status_wip">En cours</span>
+          <h3 data-i18n="p1_title">Joxial</h3>
+          <p data-i18n="p1_text">Joxial est une application web qui combine les meilleures fonctionnalités des applications du moment comme Whatsapp, Facebook, Snapchat et les sites de Gaming.</p>
+          <p class="tags" data-i18n="p1_skills">Compétences utilisées : HTML, CSS, JavaScript, Science des données, analyse</p>
+        </article>
+
+        <article class="card">
+          <span class="badge" data-i18n="status_wip">En cours</span>
+          <h3 data-i18n="p2_title">Tubissh</h3>
+          <p data-i18n="p2_text">Un site web qui permet de partager des vidéos et des contenus multimédias moyennement lourds à distance.</p>
+          <p class="tags" data-i18n="p2_skills">Compétences utilisées : Python, HTML, CSS, JavaScript</p>
+        </article>
+
+        <article class="card">
+          <span class="badge" data-i18n="status_upcoming">À venir</span>
+          <h3 data-i18n="p3_title">Projet X</h3>
+          <p data-i18n="p3_text">Un site web pour un particulier voulant créer une entreprise de lavage générale</p>
+          <p class="tags" data-i18n="p3_skills">Compétences utilisées : HTML, CSS, JavaScript, Python</p>
+        </article>
+
+        <article class="card">
+          <span class="badge" data-i18n="status_wip">En cours</span>
+          <h3 data-i18n="p4_title">ACCA</h3>
+          <p data-i18n="p4_text">Un site web de remplissage de formulaires de l'ACCA (Association Congolaise de la Côte d'Azur)</p>
+          <p class="tags" data-i18n="p4_skills">Compétences utilisées : HTML, CSS, JavaScript</p>
+        </article>
+
+      </div>
     </section>
 
     <section id="contact" class="section contact" aria-labelledby="contact-title">
@@ -171,6 +171,8 @@
           </form>
         </details>
         <a class="btn btn-ghost" href="https://github.com/AnonymaxxL" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-ghost" href="tel:+33746106357"><span data-i18n="contact_phone_label">Téléphone</span> : 07 46 10 63 57</a>
+        <p class="contact-location"><span data-i18n="contact_location_label">Ville</span> : Nice, France</p>
       </div>
     </section>
 
