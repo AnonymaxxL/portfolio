@@ -6,14 +6,19 @@ function setLanguage(lang) {
 
   const locale = lang === "zh" ? "zh-CN" : lang;
   const messages = translations[lang];
+  const isNotFoundPage = document.body.dataset.page === "not-found";
+  const title = isNotFoundPage ? messages.notfound_document_title : messages.document_title;
+  const description = isNotFoundPage ? messages.notfound_meta_description : messages.meta_description;
 
   document.documentElement.lang = locale;
-  document.title = messages.document_title;
-  document.querySelector('meta[name="description"]').content = messages.meta_description;
-  document.querySelector('meta[property="og:title"]').content = messages.document_title;
-  document.querySelector('meta[property="og:description"]').content = messages.meta_description;
-  document.querySelector('meta[name="twitter:title"]').content = messages.document_title;
-  document.querySelector('meta[name="twitter:description"]').content = messages.meta_description;
+  document.title = title;
+  document.querySelector('meta[name="description"]').content = description;
+  document.querySelector('meta[property="og:title"]').content = title;
+  document.querySelector('meta[property="og:description"]').content = description;
+  document.querySelector('meta[property="og:image:alt"]').content = messages.meta_social_image_alt;
+  document.querySelector('meta[name="twitter:title"]').content = title;
+  document.querySelector('meta[name="twitter:description"]').content = description;
+  document.querySelector('meta[name="twitter:image:alt"]').content = messages.meta_social_image_alt;
   document.querySelector('meta[property="og:locale"]').content = {
     fr: "fr_FR",
     en: "en_US",
@@ -110,7 +115,7 @@ if (window.IntersectionObserver && !reduceMotion) {
 }
 
 const contactForm = document.querySelector(".contact-form");
-contactForm.addEventListener("submit", () => {
+if (contactForm) contactForm.addEventListener("submit", () => {
   const subject = contactForm.querySelector('[name="subject"]').value.trim();
   contactForm.querySelector('[name="_subject"]').value = subject;
 });
