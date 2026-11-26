@@ -92,7 +92,7 @@ if (window.IntersectionObserver) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".hero > *, .section > h2, .section > p, .section > .grid > *, .section > .skills-grid > *, .contact-actions"
+  ".hero > *, .section > h2, .section > p, .section > .grid > *, .section > .skills-grid > *, .contact-block"
 );
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

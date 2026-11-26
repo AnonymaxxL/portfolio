@@ -45,7 +45,7 @@
       <img src="logo.svg" alt="">
       <span class="logo-copy">
         <strong>YAO ROLAND AGBOLAN</strong>
-        <small>SOFTWARE DEVELOPER</small>
+        <small>Étudiant en Science des Données</small>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale" data-i18n-aria-label="nav_label">
@@ -65,19 +65,134 @@
   <main id="main" tabindex="-1">
 
     <section id="top" class="hero" aria-labelledby="hero-title">
-      <p class="kicker" data-i18n="hero_kicker">Étudiant en Science des Données · Développeur</p>
-      <h1 id="hero-title" data-i18n="hero_title">Je transforme des idées en projets concrets, avec du code et des données.</h1>
-      <p class="lead" data-i18n="hero_text">Je m'appelle Yao Roland AGBOLAN. J'apprends, je construis et je publie.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#projects" data-i18n="hero_cta">Voir mes projets</a>
-        <a class="btn btn-ghost" href="#contact" data-i18n="hero_cta2">Me contacter</a>
-        <button class="btn btn-ghost" type="button" disabled data-i18n="hero_cv_unavailable">CV bientôt disponible</button>
+      <div class="hero-content">
+        <p class="kicker" data-i18n="hero_kicker">Étudiant en Science des Données · Développeur</p>
+        <h1 id="hero-title" data-i18n="hero_title">Je transforme des idées en projets concrets, avec du code et des données.</h1>
+        <p class="lead" data-i18n="hero_text">Je m'appelle Yao Roland AGBOLAN. J'apprends, je construis et je publie.</p>
+        <div class="actions hero-actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero_cta">Voir mes projets</a>
+          <a class="btn btn-primary" href="#contact" data-i18n="hero_cta2">Me contacter</a>
+          <a class="btn btn-primary" href="cv.pdf" data-i18n="hero_cv">Télécharger mon CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="photo.jpg.jpeg" alt="Photo de profil" class="profile-photo" aria-hidden="false">
       </div>
     </section>
 
-    <section id="about" class="section about" aria-labelledby="about-title">
-      <h2 id="about-title" data-i18n="about_title">À propos</h2>
-      <p data-i18n="about_text">Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'IA.</p>
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" data-i18n="projects_title">Projets</h2>
+      <div class="grid">
+
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="capture formulaire acca.png" alt="Formulaire d'adhésion ACCA" class="project-image" aria-hidden="false">
+          </div>
+          <span class="badge badge-done" data-i18n="status_done">Terminé</span>
+          <h3 data-i18n="p4_title">ACCA</h3>
+          <p class="project-short" data-i18n="p4_short">Formulaire d'adhésion en ligne pour l'association ACCA.</p>
+          <details class="project-details">
+            <summary data-i18n="p4_details">Voir les détails du projet</summary>
+            <div class="project-step">
+              <img src="capture formulaire acca.png" alt="Étape 1 : formulaire d'inscription" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p4_step1">Étape 1 : Formulaire d'inscription — les nouveaux membres renseignent leurs informations personnelles.</p>
+            </div>
+            <div class="project-step">
+              <img src="code acca code gs.png" alt="Étape 2 : code Apps Script" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p4_step2">Étape 2 : Traitement backend — Apps Script (code.gs) valide, enregistre et notifie chaque demande.</p>
+            </div>
+            <div class="project-step">
+              <img src="code acca index html.png" alt="Étape 3 : interface formulaire" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p4_step3">Étape 3 : Interface — page HTML/CSS du formulaire avec validation et récapitulatif en 3 étapes.</p>
+            </div>
+            <div class="project-step">
+              <img src="base des données acca google sheets.png" alt="Étape 4 : base de données" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p4_step4">Étape 4 : Registre — les demandes sont stockées dans Google Sheets avec suivi de statut (En attente, Accepté, Refusé).</p>
+            </div>
+          </details>
+          <p class="tags" data-i18n="p4_skills">HTML · CSS · JavaScript · Google Apps Script · Google Sheets</p>
+          <div class="project-links">
+            <a class="btn btn-ghost project-link" href="https://script.google.com/u/0/home/projects/1DNMnd8Y2VT1S8su3_u_usudJEgcz178RZY8DW5PvynNIFtiLrKYpX9bJ/edit" target="_blank" rel="noopener noreferrer" data-i18n="p4_link_code">Voir le code ACCA</a>
+            <a class="btn btn-ghost project-link" href="https://script.google.com/macros/s/AKfycbw0D4gMl84QuOKH43hEG6inQvf9G0iX9n_Wn9R74WIPMD9RAHrafH6nT8KpIrJ50dii/exec" target="_blank" rel="noopener noreferrer" data-i18n="p4_link_demo">Voir le formulaire ACCA</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="image de l'interface joxial.png" alt="Interface du projet Joxial" class="project-image" aria-hidden="false">
+          </div>
+          <span class="badge badge-wip" data-i18n="status_wip">En cours</span>
+          <h3 data-i18n="p1_title">Joxial</h3>
+          <p class="project-short" data-i18n="p1_short">PWA de communauté avec entraide structurée ("Coup de main").</p>
+          <details class="project-details">
+            <summary data-i18n="p1_details">Voir les détails du projet</summary>
+            <div class="project-step">
+              <img src="image de l'interface joxial.png" alt="Étape 1 : interface Joxial" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p1_step1">Étape 1 : Interface — tableau de bord communautaire avec cercles et tableau d'entraide.</p>
+            </div>
+            <div class="project-step">
+              <img src="backen qlqconq joxial vscode.png" alt="Étape 2 : backend Joxial" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p1_step2">Étape 2 : Backend — architecture FastAPI avec modules isolés (auth, circles, help, trust…).</p>
+            </div>
+            <div class="project-step">
+              <img src="frontend qlqconq joxial vscode.png" alt="Étape 3 : frontend Joxial" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p1_step3">Étape 3 : Frontend — React + TypeScript + Tailwind, PWA installable.</p>
+            </div>
+            <div class="project-step">
+              <img src="détails du contenu du doissier joxial.png" alt="Étape 4 : structure dossier Joxial" class="step-image" aria-hidden="false">
+              <p class="step-caption" data-i18n="p1_step4">Étape 4 : Organisation — dépôt backend/ + frontend/ + docs/ avec domaines séparés.</p>
+            </div>
+          </details>
+          <p class="tags" data-i18n="p1_skills">Python · FastAPI · React · TypeScript · PostgreSQL · PWA · Sécurité · RGPD</p>
+          <div class="project-links">
+            <a class="btn btn-ghost project-link" href="https://github.com/AnonymaxxL/joxial-pwa" target="_blank" rel="noopener noreferrer" data-i18n="p1_link_code">Voir le code Joxial</a>
+            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p1_link_demo">Démo bientôt disponible</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media">
+            <div class="project-image-placeholder" aria-hidden="true">
+              <span class="placeholder-icon">📄</span>
+              <span class="placeholder-text" data-i18n="p2_placeholder">Aperçu à venir</span>
+            </div>
+          </div>
+          <span class="badge badge-upcoming" data-i18n="status_upcoming">À venir</span>
+          <h3 data-i18n="p2_title">Tubissh</h3>
+          <p class="project-short" data-i18n="p2_short">Plateforme de partage de vidéos et fichiers multimédias à distance.</p>
+          <details class="project-details">
+            <summary data-i18n="p2_details">Voir les détails du projet</summary>
+            <p class="step-caption" data-i18n="p2_step1">Conception du site, intégration du stockage et du streaming de fichiers volumineux.</p>
+          </details>
+          <p class="tags" data-i18n="p2_skills">Python · HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p2_link_code">Code bientôt disponible</a>
+            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p2_link_demo">Démo bientôt disponible</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media">
+            <div class="project-image-placeholder" aria-hidden="true">
+              <span class="placeholder-icon">📄</span>
+              <span class="placeholder-text" data-i18n="p3_placeholder">Aperçu à venir</span>
+            </div>
+          </div>
+          <span class="badge badge-upcoming" data-i18n="status_upcoming">À venir</span>
+          <h3 data-i18n="p3_title">Projet X</h3>
+          <p class="project-short" data-i18n="p3_short">Site vitrine pour une entreprise de nettoyage (automobile, hôtellerie).</p>
+          <details class="project-details">
+            <summary data-i18n="p3_details">Voir les détails du projet</summary>
+            <p class="step-caption" data-i18n="p3_step1">Conception du site vitrine, présentation des services et prise de contact.</p>
+          </details>
+          <p class="tags" data-i18n="p3_skills">HTML · CSS · JavaScript · Python</p>
+          <div class="project-links">
+            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p3_link_code">Code bientôt disponible</a>
+            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p3_link_demo">Démo bientôt disponible</a>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section id="skills" class="section skills" aria-labelledby="skills-title">
@@ -86,68 +201,107 @@
         <div class="skill-group" aria-labelledby="skills-development-title">
           <h3 id="skills-development-title" data-i18n="skills_group_development">Développement</h3>
           <ul class="skill-list">
-            <li><span>HTML</span><span class="skill-level" data-i18n="level_projects">Autonome sur des projets</span></li>
-            <li><span>CSS</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
-            <li><span>JavaScript</span><span class="skill-level" data-i18n="level_projects">Autonome sur des projets</span></li>
-            <li><span>Python</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
-            <li><span>Java</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></li>
+            <li>
+              <div class="skill-row"><span>HTML</span><span class="skill-level" data-i18n="level_projects" data-level="85">Autonome sur des projets</span></div>
+              <div class="skill-progress"><span style="--level: 85%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>CSS</span><span class="skill-level" data-i18n="level_comfortable" data-level="80">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>JavaScript</span><span class="skill-level" data-i18n="level_projects" data-level="75">Autonome sur des projets</span></div>
+              <div class="skill-progress"><span style="--level: 75%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Python</span><span class="skill-level" data-i18n="level_comfortable" data-level="70">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 70%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Java</span><span class="skill-level" data-i18n="level_intermediate" data-level="55">Intermédiaire</span></div>
+              <div class="skill-progress"><span style="--level: 55%"></span></div>
+            </li>
           </ul>
         </div>
 
         <div class="skill-group" aria-labelledby="skills-data-title">
           <h3 id="skills-data-title" data-i18n="skills_group_data">Données et mathématiques</h3>
           <ul class="skill-list">
-            <li><span data-i18n="skill_data_science">Science des données</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
-            <li><span data-i18n="skill_data_analysis">Analyse de données</span><span class="skill-level" data-i18n="level_learning">En apprentissage</span></li>
-            <li><span>Excel</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></li>
-            <li><span data-i18n="skill_databases">Bases de données relationnelles</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
-            <li><span data-i18n="skill_math">Mathématiques</span><span class="skill-level" data-i18n="level_very_comfortable">Très à l’aise</span></li>
-            <li><span data-i18n="skill_statistics">Statistiques</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
-            <li><span data-i18n="skill_probability">Probabilités</span><span class="skill-level" data-i18n="level_comfortable">À l’aise</span></li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_data_science">Science des données</span><span class="skill-level" data-i18n="level_comfortable" data-level="80">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_data_analysis">Analyse de données</span><span class="skill-level" data-i18n="level_learning" data-level="50">En apprentissage</span></div>
+              <div class="skill-progress"><span style="--level: 50%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Excel</span><span class="skill-level" data-i18n="level_intermediate" data-level="65">Intermédiaire</span></div>
+              <div class="skill-progress"><span style="--level: 65%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_databases">Bases de données relationnelles</span><span class="skill-level" data-i18n="level_comfortable" data-level="75">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 75%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_math">Mathématiques</span><span class="skill-level" data-i18n="level_very_comfortable" data-level="95">Très à l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 95%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_statistics">Statistiques</span><span class="skill-level" data-i18n="level_comfortable" data-level="80">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-row"><span data-i18n="skill_probability">Probabilités</span><span class="skill-level" data-i18n="level_comfortable" data-level="80">À l’aise</span></div>
+              <div class="skill-progress"><span style="--level: 80%"></span></div>
+            </li>
           </ul>
         </div>
 
         <div class="skill-group" aria-labelledby="skills-systems-title">
           <h3 id="skills-systems-title" data-i18n="skills_group_systems">Systèmes et sécurité</h3>
           <ul class="skill-list">
-            <li><span>Kali Linux</span><span class="skill-level" data-i18n="level_basics">Notions</span></li>
+            <li>
+              <div class="skill-row"><span>Kali Linux</span><span class="skill-level" data-i18n="level_basics" data-level="30">Notions</span></div>
+              <div class="skill-progress"><span style="--level: 30%"></span></div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <h2 id="projects-title" data-i18n="projects_title">Projets</h2>
-      <div class="grid">
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p1_title">Joxial</h3>
-          <p data-i18n="p1_text">Joxial est une application web qui combine les meilleures fonctionnalités des applications du moment comme Whatsapp, Facebook, Snapchat et les sites de Gaming.</p>
-          <p class="tags" data-i18n="p1_skills">Compétences utilisées : HTML, CSS, JavaScript, Science des données, analyse</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p2_title">Tubissh</h3>
-          <p data-i18n="p2_text">Un site web qui permet de partager des vidéos et des contenus multimédias moyennement lourds à distance.</p>
-          <p class="tags" data-i18n="p2_skills">Compétences utilisées : Python, HTML, CSS, JavaScript</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_upcoming">À venir</span>
-          <h3 data-i18n="p3_title">Projet X</h3>
-          <p data-i18n="p3_text">Un site web pour un particulier voulant créer une entreprise de lavage générale</p>
-          <p class="tags" data-i18n="p3_skills">Compétences utilisées : HTML, CSS, JavaScript, Python</p>
-        </article>
-
-        <article class="card">
-          <span class="badge" data-i18n="status_wip">En cours</span>
-          <h3 data-i18n="p4_title">ACCA</h3>
-          <p data-i18n="p4_text">Un site web de remplissage de formulaires de l'ACCA (Association Congolaise de la Côte d'Azur)</p>
-          <p class="tags" data-i18n="p4_skills">Compétences utilisées : HTML, CSS, JavaScript</p>
-        </article>
-
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="about_title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about_text">Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'intelligence artificielle.</p>
+          <p data-i18n="about_text2">Je recherche un stage ou une alternance pour mettre mes compétences au service de projets concrets et continuer à apprendre aux côtés de professionnels.</p>
+        </div>
+        <div class="education-card">
+          <h3 data-i18n="education_title">Éducation</h3>
+          <details class="education-accordion">
+            <summary class="education-summary" data-i18n="edu_see_more">Voir mon parcours scolaire</summary>
+            <div class="education-body">
+              <div class="education-item">
+                <h4 data-i18n="edu_degree">BUT Science des Données</h4>
+                <p><span data-i18n="edu_school">IUT Nice Côte d'Azur</span> · <span data-i18n="edu_location">Nice, France</span></p>
+                <p><span class="edu-date" data-i18n="edu_date_current">Sept. 2026 → Mai 2029 (en cours)</span></p>
+                <p data-i18n="edu_courses">Cours clés : Bases de données, Programmation, Statistiques, Probabilités, Mathématiques (analyse).</p>
+              </div>
+              <div class="education-item edu-divider">
+                <h4 data-i18n="edu_bac">Baccalauréat Scientifique, série C</h4>
+                <p><span data-i18n="edu_bac_school">Lycée de Tokoin</span> · <span data-i18n="edu_bac_location">Lomé, Togo</span></p>
+                <p><span class="edu-date" data-i18n="edu_bac_date">Juin 2025</span> · <span data-i18n="edu_bac_mention">Mention Très bien</span></p>
+              </div>
+              <div class="education-item">
+                <h4 data-i18n="edu_license">Licence 1 en Mathématiques</h4>
+                <p><span data-i18n="edu_license_school">Université de Lomé</span> · <span data-i18n="edu_license_location">Lomé, Togo</span></p>
+                <p><span class="edu-date" data-i18n="edu_license_date">Oct. 2024 → Juil. 2026</span> · <span data-i18n="edu_license_mention">Mention Très bien (1ère année)</span></p>
+                <p data-i18n="edu_license_note">Première année effectuée avant mon arrivée à Nice.</p>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
