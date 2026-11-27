@@ -11,6 +11,12 @@ function setLanguage(lang) {
   const description = isNotFoundPage ? messages.notfound_meta_description : messages.meta_description;
 
   document.documentElement.lang = locale;
+  // Chaque version linguistique a sa propre adresse de référence
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    const base = canonical.href.split("?")[0];
+    canonical.href = lang === DEFAULT_LANG ? base : `${base}?lang=${lang}`;
+  }
   document.title = title;
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[property="og:title"]').content = title;
@@ -49,15 +55,23 @@ function setLanguage(lang) {
 }
 
 function detectLanguage() {
+  const asked = new URLSearchParams(location.search).get("lang");
+  if (translations[asked]) return asked;
   try {
     const saved = localStorage.getItem("lang");
     if (saved) return saved;
   } catch (e) {}
-  const browser = (navigator.language || "fr").slice(0, 2);
-  return translations[browser] ? browser : DEFAULT_LANG;
+  return DEFAULT_LANG;
 }
 
-buttons.forEach((b) => b.addEventListener("click", () => setLanguage(b.dataset.lang)));
+buttons.forEach((b) => b.addEventListener("click", () => {
+  setLanguage(b.dataset.lang);
+  // L'adresse suit la langue choisie
+  const url = new URL(location.href);
+  if (b.dataset.lang === DEFAULT_LANG) url.searchParams.delete("lang");
+  else url.searchParams.set("lang", b.dataset.lang);
+  history.replaceState(null, "", url);
+}));
 
 const navLinks = document.querySelectorAll(".nav a");
 const navTargets = Array.from(navLinks, (link) => document.querySelector(link.hash));
