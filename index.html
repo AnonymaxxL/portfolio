@@ -71,8 +71,8 @@
         <p class="lead" data-i18n="hero_text">Je m'appelle Yao Roland AGBOLAN. J'apprends, je construis et je publie.</p>
         <div class="actions hero-actions">
           <a class="btn btn-primary" href="#projects" data-i18n="hero_cta">Voir mes projets</a>
-          <a class="btn btn-primary" href="#contact" data-i18n="hero_cta2">Me contacter</a>
-          <a class="btn btn-primary" href="cv.pdf.jpeg" data-i18n="hero_cv">Télécharger mon CV</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero_cta2">Me contacter</a>
+          <a class="btn btn-ghost" href="cv.pdf.jpeg" download="CV-Yao-Roland-AGBOLAN.jpeg" data-i18n="hero_cv">Télécharger mon CV</a>
         </div>
       </div>
       <div class="hero-image">
@@ -87,30 +87,27 @@
           <p data-i18n="about_text">Admis en BUT Science des Données à l'IUT Nice Côte d'Azur, je me forme en autodidacte à la programmation, à la cybersécurité, au Big Data et à l'intelligence artificielle.</p>
           <p data-i18n="about_text2">Je recherche un stage ou une alternance pour mettre mes compétences au service de projets concrets et continuer à apprendre aux côtés de professionnels.</p>
         </div>
-        <div class="education-card">
+        <div class="education">
           <h3 data-i18n="education_title">Éducation</h3>
-          <details class="education-accordion">
-            <summary class="education-summary" data-i18n="edu_see_more">Voir mon parcours scolaire</summary>
-            <div class="education-body">
-              <div class="education-item">
-                <h4 data-i18n="edu_degree">BUT Science des Données</h4>
-                <p><span data-i18n="edu_school">IUT Nice Côte d'Azur</span> · <span data-i18n="edu_location">Nice, France</span></p>
-                <p><span class="edu-date" data-i18n="edu_date_current">Sept. 2026 → Mai 2029 (en cours)</span></p>
-                <p data-i18n="edu_courses">Cours clés : Bases de données, Programmation, Statistiques, Probabilités, Mathématiques (analyse).</p>
-              </div>
-              <div class="education-item edu-divider">
-                <h4 data-i18n="edu_bac">Baccalauréat Scientifique, série C</h4>
-                <p><span data-i18n="edu_bac_school">Lycée de Tokoin</span> · <span data-i18n="edu_bac_location">Lomé, Togo</span></p>
-                <p><span class="edu-date" data-i18n="edu_bac_date">Juin 2025</span> · <span data-i18n="edu_bac_mention">Mention Très bien</span></p>
-              </div>
-              <div class="education-item">
-                <h4 data-i18n="edu_license">Licence 1 en Mathématiques</h4>
-                <p><span data-i18n="edu_license_school">Université de Lomé</span> · <span data-i18n="edu_license_location">Lomé, Togo</span></p>
-                <p><span class="edu-date" data-i18n="edu_license_date">Oct. 2024 → Juil. 2026</span> · <span data-i18n="edu_license_mention">Mention Très bien (1ère année)</span></p>
-                <p data-i18n="edu_license_note">Première année effectuée avant mon arrivée à Nice.</p>
-              </div>
-            </div>
-          </details>
+          <ol class="timeline">
+          <li class="education-item">
+            <h4 data-i18n="edu_bac">Baccalauréat Scientifique, série C</h4>
+            <p><span data-i18n="edu_bac_school">Lycée de Tokoin</span> · <span data-i18n="edu_bac_location">Lomé, Togo</span></p>
+            <p><span class="edu-date" data-i18n="edu_bac_date">Juin 2025</span> · <span data-i18n="edu_bac_mention">Mention Très bien</span></p>
+          </li>
+          <li class="education-item">
+            <h4 data-i18n="edu_license">Licence 1 en Mathématiques</h4>
+            <p><span data-i18n="edu_license_school">Université de Lomé</span> · <span data-i18n="edu_license_location">Lomé, Togo</span></p>
+            <p><span class="edu-date" data-i18n="edu_license_date">Oct. 2024 → Juil. 2026</span> · <span data-i18n="edu_license_mention">Mention Très bien (1ère année)</span></p>
+            <p data-i18n="edu_license_note">Première année effectuée avant mon arrivée à Nice.</p>
+          </li>
+          <li class="education-item">
+            <h4 data-i18n="edu_degree">BUT Science des Données</h4>
+            <p><span data-i18n="edu_school">IUT Nice Côte d'Azur</span> · <span data-i18n="edu_location">Nice, France</span></p>
+            <p><span class="edu-date" data-i18n="edu_date_current">Sept. 2026 → Mai 2029 (en cours)</span></p>
+            <p data-i18n="edu_courses">Cours clés : Bases de données, Programmation, Statistiques, Probabilités, Mathématiques (analyse).</p>
+          </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -256,7 +253,7 @@
           <p class="tags" data-i18n="p1_skills">Python · FastAPI · React · TypeScript · PostgreSQL · PWA · Sécurité · RGPD</p>
           <div class="project-links">
             <a class="btn btn-ghost project-link" href="https://github.com/AnonymaxxL/joxial-pwa" target="_blank" rel="noopener noreferrer" data-i18n="p1_link_code">Voir le code Joxial</a>
-            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p1_link_demo">Démo bientôt disponible</a>
+            <span class="btn btn-ghost project-link disabled" data-i18n="p1_link_demo">Démo bientôt disponible</span>
           </div>
         </article>
 
@@ -276,8 +273,8 @@
           </details>
           <p class="tags" data-i18n="p2_skills">Python · HTML · CSS · JavaScript</p>
           <div class="project-links">
-            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p2_link_code">Code bientôt disponible</a>
-            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p2_link_demo">Démo bientôt disponible</a>
+            <span class="btn btn-ghost project-link disabled" data-i18n="p2_link_code">Code bientôt disponible</span>
+            <span class="btn btn-ghost project-link disabled" data-i18n="p2_link_demo">Démo bientôt disponible</span>
           </div>
         </article>
 
@@ -297,8 +294,8 @@
           </details>
           <p class="tags" data-i18n="p3_skills">HTML · CSS · JavaScript · Python</p>
           <div class="project-links">
-            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p3_link_code">Code bientôt disponible</a>
-            <a class="btn btn-ghost project-link disabled" href="#" data-i18n="p3_link_demo">Démo bientôt disponible</a>
+            <span class="btn btn-ghost project-link disabled" data-i18n="p3_link_code">Code bientôt disponible</span>
+            <span class="btn btn-ghost project-link disabled" data-i18n="p3_link_demo">Démo bientôt disponible</span>
           </div>
         </article>
 
@@ -338,10 +335,12 @@
             <p class="form-note" data-i18n="form_privacy">Les informations saisies sont transmises à Formspree pour que je puisse recevoir ton message. N’envoie pas d’informations sensibles.</p>
           </form>
         </details>
-        <a class="btn btn-ghost" href="https://github.com/AnonymaxxL" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/landro-agbolan-50a87044b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://www.youtube.com/@anonymaxxl" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a class="btn btn-ghost" href="tel:+33746106357"><span data-i18n="contact_phone_label">Téléphone</span> : 07 46 10 63 57</a>
+        <div class="contact-links">
+          <a class="btn btn-ghost" href="https://github.com/AnonymaxxL" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/landro-agbolan-50a87044b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/@anonymaxxl" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a class="btn btn-ghost" href="tel:+33746106357"><span data-i18n="contact_phone_label">Téléphone</span> : 07 46 10 63 57</a>
+        </div>
         <p class="contact-location"><span data-i18n="contact_location_label">Ville</span> : Nice, France</p>
       </div>
     </section>
