@@ -322,6 +322,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   display: flex;
   gap: 10px;
 }
+@media (min-width: 901px) {
+  .project-links { flex-wrap: wrap; }
+  .project-link { flex: 1 1 170px; }
+}
 .project-link { text-align: center; }
 .project-link.disabled { opacity: 0.5; cursor: not-allowed; }
 
