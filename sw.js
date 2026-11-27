@@ -1,6 +1,6 @@
 // Réseau d'abord : les mises à jour du site arrivent sans attendre.
 // La copie en cache ne sert que si la connexion est coupée.
-const CACHE = "yra-portfolio-v2";
+const CACHE = "yra-portfolio-v3";
 const FILES = [
   "./", "index.html", "style.css", "translations.js", "script.js",
   "site.webmanifest", "logo.svg", "favicon.svg", "photo.jpg.jpeg",
