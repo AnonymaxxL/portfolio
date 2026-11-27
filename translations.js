@@ -1,6 +1,9 @@
 // Tous les textes du site, par langue. Pour modifier un texte, change-le ici.
 const translations = {
   fr: {
+    install_button: "Installer l'application",
+    install_help_ios: "Sur iPhone ou iPad : touchez le bouton Partager, puis « Sur l'écran d'accueil ».",
+    install_help_other: "Ouvrez le menu de votre navigateur, puis choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil ». Sur Mac avec Safari : Fichier, puis « Ajouter au Dock ».",
     document_title: "Yao Roland AGBOLAN | Portfolio",
     meta_description: "Portfolio de Yao Roland AGBOLAN, étudiant en Science des Données et développeur. Découvrez ses projets et son parcours.",
     meta_social_image_alt: "Portfolio de Yao Roland AGBOLAN, étudiant en science des données et développeur.",
@@ -104,6 +107,9 @@ const translations = {
     form_privacy: "Les informations que vous communiquez sont transmises à Formspree afin que je puisse recevoir votre message. Veuillez ne pas inclure d’informations sensibles."
   },
   en: {
+    install_button: "Install the app",
+    install_help_ios: "On iPhone or iPad: tap the Share button, then “Add to Home Screen”.",
+    install_help_other: "Open your browser menu, then choose “Install app” or “Add to Home screen”. On Mac with Safari: File, then “Add to Dock”.",
     document_title: "Yao Roland AGBOLAN | Portfolio",
     meta_description: "Portfolio of Yao Roland AGBOLAN, a Data Science student and developer. Explore his projects and background.",
     meta_social_image_alt: "Portfolio of Yao Roland AGBOLAN, Data Science student and developer.",
@@ -207,6 +213,9 @@ const translations = {
     form_privacy: "The information you provide is sent to Formspree so I can receive your message. Please do not include sensitive information."
   },
   es: {
+    install_button: "Instalar la aplicación",
+    install_help_ios: "En iPhone o iPad: toque el botón Compartir y luego «Añadir a pantalla de inicio».",
+    install_help_other: "Abra el menú del navegador y elija «Instalar aplicación» o «Añadir a pantalla de inicio». En Mac con Safari: Archivo y luego «Añadir al Dock».",
     document_title: "Yao Roland AGBOLAN | Portafolio",
     meta_description: "Portafolio de Yao Roland AGBOLAN, estudiante de Ciencia de Datos y desarrollador. Descubre sus proyectos y trayectoria.",
     meta_social_image_alt: "Portafolio de Yao Roland AGBOLAN, estudiante de Ciencia de Datos y desarrollador.",
@@ -310,6 +319,9 @@ const translations = {
     form_privacy: "La información que facilite se enviará a Formspree para que pueda recibir su mensaje. No incluya información sensible."
   },
   zh: {
+    install_button: "安装应用",
+    install_help_ios: "在 iPhone 或 iPad 上：点按“分享”按钮，然后选择“添加到主屏幕”。",
+    install_help_other: "打开浏览器菜单，选择“安装应用”或“添加到主屏幕”。在 Mac 的 Safari 中：点击“文件”，然后选择“添加到程序坞”。",
     document_title: "Yao Roland AGBOLAN | 个人作品集",
     meta_description: "Yao Roland AGBOLAN 的个人作品集。他是数据科学专业学生和开发者，欢迎了解他的项目与经历。",
     meta_social_image_alt: "Yao Roland AGBOLAN 的作品集：数据科学专业学生和开发者。",

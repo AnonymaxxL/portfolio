@@ -36,6 +36,9 @@ function setLanguage(lang) {
     if (messages[key] !== undefined) el.setAttribute("aria-label", messages[key]);
   });
 
+  const help = document.querySelector(".install-help");
+  if (help && help.dataset.key) help.textContent = messages[help.dataset.key];
+
   buttons.forEach((button) => {
     const isActive = button.dataset.lang === lang;
     button.classList.toggle("active", isActive);
@@ -122,3 +125,46 @@ if (contactForm) contactForm.addEventListener("submit", () => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 setLanguage(detectLanguage());
+
+// Installation du site comme application (téléphone et ordinateur)
+if ("serviceWorker" in navigator && location.protocol !== "file:") {
+  navigator.serviceWorker.register("sw.js").catch(() => { /* le site reste utilisable */ });
+}
+
+const installButton = document.querySelector(".install-button");
+if (installButton) {
+  const installHelp = document.querySelector(".install-help");
+  const isInstalled = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  let installPrompt = null;
+
+  installButton.hidden = isInstalled;
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    installPrompt = event;
+    installButton.hidden = false;
+    installHelp.hidden = true;
+  });
+
+  installButton.addEventListener("click", async () => {
+    if (installPrompt) {
+      installPrompt.prompt();
+      await installPrompt.userChoice;
+      installPrompt = null;
+      return;
+    }
+    // Pas de fenêtre d'installation automatique : on explique la manipulation
+    installHelp.dataset.key = isIos ? "install_help_ios" : "install_help_other";
+    installHelp.textContent = translations[
+      document.documentElement.lang.slice(0, 2)
+    ][installHelp.dataset.key];
+    installHelp.hidden = false;
+  });
+
+  window.addEventListener("appinstalled", () => {
+    installButton.hidden = true;
+    installHelp.hidden = true;
+  });
+}

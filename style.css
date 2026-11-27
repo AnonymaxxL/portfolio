@@ -414,6 +414,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .skill-group:nth-child(2) .skill-progress > span { background: #10B981; }
 .skill-group:nth-child(3) .skill-progress > span { background: #F59E0B; }
 
+/* Bouton d'installation */
+.btn[hidden], .install-help[hidden] { display: none; }
+.install-button { cursor: pointer; }
+.install-help { margin-top: 14px; max-width: 52ch; font-size: 0.9rem; color: var(--muted); }
+
 /* Mobile & Tablet */
 @media (max-width: 900px) {
   section[id] { scroll-margin-top: 112px; }
@@ -429,6 +434,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
   .hero { flex-direction: column; text-align: center; padding: 32px var(--gutter) 48px; gap: 24px; }
   .hero-content { order: 2; flex: none; width: 100%; min-width: 0; }
+  .install-help { margin-inline: auto; }
   .hero-image { order: 1; flex: none; width: 100%; min-width: 0; }
   .profile-photo { width: 150px; height: 150px; }
   .kicker { font-size: 0.75rem; margin-bottom: 14px; }
